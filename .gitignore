@@ -25,3 +25,12 @@
 *.lot
 *.gnuplot
 *.gz
+
+
+
+#netbeans
+*.netbeans_update_resources
+*.netbeans_automatic_build
+*/nbproject/*
+*.xml
+*.mf
