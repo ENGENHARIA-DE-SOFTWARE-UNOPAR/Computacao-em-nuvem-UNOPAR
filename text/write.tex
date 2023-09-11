@@ -8,7 +8,7 @@
   \vspace {1cm}
   \begin{description}
     \item [CloudSim] De acordo com \citeonline{cloudSim}, é um framework para simulação de infraestrutura e serviços de computação em nuvem.
-    É uma opção de aprendizado vastamente utilizado pelas universidades ao redor do globo, e uma framework de código aberto e qualquer um pode contribuir com a mesma através de seu repositório no \href{https://github.com/Cloudslab}{GitHub}.
+    É uma opção de aprendizado vastamente utilizado pelas universidades ao redor do globo, é uma framework de código aberto e qualquer um pode contribuir com a mesma através de seu repositório no \href{https://github.com/Cloudslab}{GitHub}.
     \item [Apache NetBeans]  O NetBeans é um software de desenvolvimento integrado (IDE), sobre distribuição da licença Apache, versão 2.0, o projeto conta com código aberto e recebe contribuição de qualquer desenvolvedor que se proponha a ajudar através do \href{https://github.com/apache/netbeans-website/blob/master/netbeans.apache.org/src/content/index.adoc}{GitHub}.
 \newline
     \par Site do software: \href{https://netbeans.apache.org/}{Apache NetBeans}
@@ -24,7 +24,7 @@
 \end{minipage}
 
 \section{Métodos}
-\par Para a elaboração da aula prática foi seguido o roteiro e um vídeo explicativo, disponibilizado pelos professores orientadores. Dentre orientações é definido uma sequência da passos para  confecão desta presente aula prática. No entanto, para este caso expecífico não foi necessário atualizar o pacote \href{https://www.oracle.com/java/technologies/downloads/}{Java JDK}, entre tudo, necessitei baixar o \href{https://netbeans.apache.org/download/nb19/}{NetBeans 18} e o \href{https://github.com/Cloudslab/cloudsim/releases}{CloudSim 2.1}, friso que o CloudSim possui versões novas (v6.0), no entanto, foi sugerido que usássemos a versão 2.1.
+\par Para a elaboração desta aula prática foi seguido o roteiro e um vídeo explicativo, disponibilizado pelos professores orientadores. Dentre as orientações é definido uma sequência da passos para  confeccão desta presente aula prática. No entanto, para este caso expecífico não foi necessário atualizar o pacote \href{https://www.oracle.com/java/technologies/downloads/}{Java JDK}, entre tudo, necessitei baixar o \href{https://netbeans.apache.org/download/nb19/}{NetBeans 18} e o \href{https://github.com/Cloudslab/cloudsim/releases}{CloudSim 2.1}, friso que o CloudSim possui versões novas (v6.0), no entanto, foi sugerido que usássemos a versão 2.1.
 
 \par Para início da elaboração desta aula prática, foi prosseguido com a criação de um novo projeo na IDE NetBeans\ref{fig:netBeans}, conforme demonstrado nas figuras:\ref{fig:creat_project},\ref{fig:creat_project_name}
 
@@ -34,14 +34,11 @@
     \subfigure[Definição do nome do projeto.\label{fig:creat_project_name}]{\includegraphics[scale=.5]{figure/create_project_name.jpg}}
     \caption{Etapas para a criação do projeto na IDE, O autor}\label{fig:confi_project}
 \end{figure}
-\par Como sugestão do roteiro o nome do projeto, foi definido como: \verb#Redes#, como demonstrado na Figura \ref{fig:creat_project_name}. De forma geral e para entendimento, este nome poderia ser qualquer outro desde que o fose alterado no projeto o nome da classe, conforme é demonstrado na figura \ref{fig:rename_pacote}, para o nome criado.
+\par Como sugestão do roteiro o nome do projeto, foi definido como: \verb#Redes#, como demonstrado na Figura \ref{fig:creat_project_name}. De forma geral e para entendimento, este nome poderia ser qualquer outro desde que o fosse alterado no projeto o nome da classe, conforme é demonstrado na figura \ref{fig:rename_pacote}, para o nome criado.
 
 
 
 \section{Resultados}
-\par De acordo com \citeonline{cloudSim:tutorial}, o que impulsiona o mecanismo de simulação central do CloudSim é o pacote que posui no dir: \verb#org.cloudbus.cloudsim.core#, com a explanação de uma fração do código vemos
-
-
 \par Após a criação do projeto foi necessário alguns ajustes no projeto para que o exemplo \verb#CloudSimExample1.java# compilase na IDE, este ajustes podem ser explanados nas figuras abaixo.
 
 \begin{enumerate}[label=\Roman{*}, ref=(\roman{*})]
@@ -63,6 +60,7 @@
 \end{enumerate}
 
 
+\par De acordo com \citeonline{cloudSim:tutorial}, o que impulsiona o mecanismo de simulação central do CloudSim é o pacote que posui no dir: \verb#org.cloudbus.cloudsim.core#.
 \par De acordo com exemplos da comunidade \citeonline{cloudSim:tutorial}, o código \verb#java#\ref{cod:exemplo}, demonstra um fragmento do exemplo e da atividade porposta. Podemos análisar o fragmento e observamos que na linha 1 cria-se um datacenter, na linha 8 cria-se uma máquina virtual, nas linha 10 até a 18 descreve as caraterísticas da maquina virtual, com numero de processadores, nome da máquina virtual(linha 17) e outras características necessárias.
 
 \lstinputlisting[language=java, caption={CloudSimExample1.java}, firstline=71, lastline=98, label={cod:exemplo}]{CloudSimExample1.java}
@@ -80,7 +78,8 @@
 \end{figure}
 \section{Conclusões}
 \par Com o execução desta aula prártica, foi demonstrado e vivido a experiencia de simulação de uma redes de computação em nuvem.
-\par As simulações permitem uma prática no aprendizado, e de acordo com \citeonline{Acervolima}, além de proporcionar uma consolidação no aprendizado as simulações vão muito além disto, nós permite testar sistemas antes de sua aplicação, prevendo erros de sistemas e outras sistuações.
+\par As simulações permitem uma prática no aprendizado, e de acordo com \citeonline{Acervolima}, além de proporcionar uma consolidação no aprendizado as simulações vão muito além disto, nós permite testar sistemas antes de sua aplicação, prevendo erros de sistemas e outras cituações. Na implementração desta aula prática foi contatado alguns detalhes relevantes, no pré projeto, como configuração do NetBeans para java e inclusão do \verb#.jar#.
+\par Ao final desta atividade explana a necessidade de configurtaçãoes de ambientes para que posterior a implmentação da real aula prática, das quais, frisam o aprendizado em sala virtual.
 
 
 
